@@ -73,7 +73,7 @@ def consume_traffic_data():
             print(f"No payload data found for work item {index}.")
             # Assuming you have a way to handle missing payload data in your system
 
-def post_traffic_data_to_sales_system(traffic_data):
+def post_traffic_data_to_sales_system(traffimc_data):
     url = "https://robocorp.com/inhuman-insurance-inc/sales-system-api"
     response = requests.post(url, json=traffic_data)
     return response.status_code, response.json()
